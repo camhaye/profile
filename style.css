@@ -1,0 +1,130 @@
+:root {
+  --xsmall: .625rem;
+  --small: .813rem;
+  --medium: 1rem;
+  --large: 1.25rem;
+  --xlarge: 1.563rem;
+  --2xlarge: 1.875rem;
+  --3xlarge: 3.125rem;
+  --4xlarge: 4.688rem;
+  --5xlarge: 6.25rem;
+  --white: #fff;
+  --light: #fafafa;
+  --darklight: #f0f0f0;
+  --darkerlight: #ebebeb;
+  --neutral: #e6e6e6;
+  --darkneutral: #b8b8b8;
+  --darkerneutral: #737373;
+  --black: #000;
+  --dark: #191919;
+  --lightdark: #333;
+  --lighterdark: #4c4c4c;
+  --whiteop25: rgba(255,255,255,0.25);
+  --whiteop5: rgba(255,255,255,0.5);
+  --whiteop75: rgba(255,255,255,0.75);
+  --neutralop25: rgba(230,230,230,0.25);
+  --neutralop5: rgba(230,230,230,0.5);
+  --neutralop75: rgba(230,230,230,0.75);
+  --blackop25: rgba(0,0,0,0.25);
+  --blackop5: rgba(0,0,0,0.5);
+  --blackop75: rgba(0,0,0,0.75);
+  --trnsp: rgba(255,255,255,0);
+  --co1: #bd6d48;
+  --lightco1: #DDB5A3;
+  --lighterco1: #F1E1DA;
+  --darkco1: #975739;
+  --co2: #7c3f5f;
+  --lightco2: #BD9FAF;
+  --lighterco2: #E4D8DF;
+  --darkco2: #63324C;
+  --co3: #3a1075;
+  --lightco3: #9C87BA;
+  --lighterco3: #D7CFE3;
+  --darkco3: #2E0C5D;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  line-height:var(--xlarge)
+}
+
+h1 {
+  letter-spacing:1px;
+  font-style:italic
+}
+.profpic {
+  height:300px;
+  width:200px;
+  border-radius:5px;
+  padding:9px;
+  object-fit: cover;
+  background-color:#f1f1f1;
+  border:1px solid #e1e1e1
+}
+
+.flexbox {
+  display: flex;
+}
+
+p {
+  width:50%;
+  text-align:justify;
+}
+
+.headerbloc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:50%
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {color: var(--co3);}
+
+h2 {color: var(--darkco2);
+}
+
+h3 {
+  width:50%;
+  font-size: var(--medium);
+  color: var(--darkneutral);
+}
+
+box-inset {
+  box-shadow: inset 0 -10px 0 #e1e1e1;
+}
+
+a i.fa-brands {
+  display:block;
+  margin:25px;
+  font-size:50px;
+  color: var(--co1)
+}
+
+a {text-decoration:none }
+
+@media (max-width: 1500px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  p {
+    width:75%;
+  }
+  .headerbloc {
+    width: 75%;
+    flex-direction: column;
+  }
+  h3 {
+    width:100%
+  }
+  .profpic {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%
+  }
+  h1 {
+    line-height: var(--3xlarge);
+  }
+}
